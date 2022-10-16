@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(212, 203, 203);
+    background-color: #cf0000;
 }
 
-*,
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 *::before,
 *::after {
     box-sizing: border-box;
@@ -12,11 +12,159 @@ body {
 }
 
 
-/* Menu */
+/* COLUMNAS */
+
+.one-column {
+    float: left;
+    width: 100.00%;
+    /*padding: 0 20% 0 20%;*/
+    /* padding: 0 20%; */
+    color: #cf0000;
+    text-align: center;
+    background-color: #000000;
+    /* background-color: #ffffff; */
+}
+
+.one-column h1 {
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    background-color: #cf0000;
+    font-family: 'Signika', sans-serif;
+}
+
+
+/* .two-column120 img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0% 0% 0% 0%;
+} */
+
+.two-column img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0% 0% 0% 0%;
+}
+
+.two-column p {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: black;
+}
+
+.two-column h2 {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    color: black;
+}
+
+.harlow {
+    font-family: myFirstFont;
+}
+
+.three-column {
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.four-column img {
+    background-color: #24eca4;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    border-radius: 15%;
+}
+
+.four-column p {
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 1110px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .two-column {
+        width: 100%;
+    }
+    .two-column img {
+        width: 100%;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .three-column {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .five-column {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .two-column {
+        width: 100%;
+        font-size: 2vw;
+    }
+    .two-column img {
+        width: 100%;
+    }
+    .two-column p {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4vw;
+        color: black;
+    }
+    .two-column h2 {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10vw;
+        color: black;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .three-column {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .five-column {
+        width: 50%;
+    }
+}
+
+
+/* Menu NAVBAR*/
 
 .container {
-    height: 60px;
-    background-color: #333333;
+    height: 80px;
+    background-color: #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -76,8 +224,8 @@ body {
 
 .container .navbar ul li a {
     text-decoration: none;
-    color: #999999;
-    font-size: 14px;
+    color: #ff0000;
+    font-size: 15px;
     text-transform: uppercase;
     display: block;
     height: 60px;
@@ -87,8 +235,8 @@ body {
 }
 
 .container .navbar ul li a:hover {
-    color: #ffffff;
-    background-color: rgba(23, 23, 23, 0.9);
+    color: #ff0000;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .container .navbar ul .close {
@@ -100,15 +248,15 @@ body {
 .container .navbar ul .close span {
     font-size: 40px;
     display: inline-block;
-    border: 1px solid #cccccc;
+    border: 1px solid #ffffff;
     padding: 0 10px;
     cursor: pointer;
 }
 
 .container .navbar .icon-bar {
     padding: 18px 8px;
-    width: 50px;
-    height: 60px;
+    width: 40px;
+    height: 30px;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -121,7 +269,7 @@ body {
 }
 
 .container .navbar .icon-bar i {
-    background-color: #ffffff;
+    background-color: #ff0000;
     height: 2px;
 }
 
@@ -163,7 +311,7 @@ body {
         font-size: 16px;
         height: auto;
         line-height: normal;
-        color: #555555;
+        color: #ff0000;
     }
     .container .navbar ul .close {
         display: block;
@@ -183,3 +331,6 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
+
+
+/* SLIDER */
