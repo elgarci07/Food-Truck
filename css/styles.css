@@ -107,7 +107,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    border-radius: 15%;
+    /* border-radius: 15%; */
 }
 
 .comida {
@@ -128,7 +128,7 @@ body {
 }
 
 .four-column p {
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -144,7 +144,7 @@ body {
         width: 100%;
     }
     /* column-4 pasará de tener 25% a 50% */
-    .five-column {
+    .four-column {
         width: 50%;
     }
 }
@@ -425,7 +425,7 @@ body {
 
 .containern .navbar ul li a {
     text-decoration: none;
-    color: #000000;
+    color: rgb(255, 0, 0);
     font-size: 14px;
     text-transform: uppercase;
     display: block;
@@ -436,8 +436,8 @@ body {
 }
 
 .containern .navbar ul li a:hover {
-    color: #ffffff;
-    background-color: rgba(23, 23, 23, 0.9);
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.9);
 }
 
 .containern .navbar ul .close {
